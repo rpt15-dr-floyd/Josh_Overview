@@ -1,0 +1,17 @@
+version: '3'
+
+services:
+  overview:
+    build: .
+
+    depends_on:
+      - 'database'
+    ports:
+      - '80:3000'
+    environment:
+      - NODE_ENV=production
+      - PROD_API_URL=http://ec2-18-144-35-234.us-west-1.compute.amazonaws.com
+      - PROD_DB_HOST=database
+
+  database:
+    image: mongo:latest
