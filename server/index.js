@@ -26,6 +26,46 @@ app.get(`/api/overview/:gameId`, (req, res) => {
   });
 });
 
+//Josh's edit
+app.post('/api/overview/', (req, res) => {
+  let newGame = req.body;
+  console.log('new game:', newGame);
+  db.save(newGame, err => {
+    if (err) {
+      console.log(err);
+    } else {
+      res.status(201).send('new game model created');
+    }
+  });
+});
+
+app.delete('/api/overview/:gameId', (req, res) => {
+  let id = req.params.gameId;
+  db.deleteGameOverview(id, err => {
+    if (err) {
+      console.log(err);
+    } else {
+      res.status(202).send(`deleted game id ${id}`);
+    }
+  });
+});
+
+app.put('/api/overview/:gameId', (req, res) => {
+  let updateGame = req.body;
+  db.updateGameOverview(updateGame, err => {
+    if (err) {
+      console.log(err);
+    } else {
+      res
+        .status(202)
+        .send(`updated game id ${updateGame.gameId}`);
+    }
+  });
+});
+
+
+
+
 app.listen(port, () => {
   console.log(`App listening on ${port}`);
 });

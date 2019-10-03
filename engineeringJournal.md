@@ -13,3 +13,23 @@ Edits in index.js in db folder:
 - db function called 'updateGameOverview' for PUT
 - db function called 'deleteGameOverview' for DELETE
 
+
+Edits in index.js in server folder:
+- added CRUD OPERATIONs Delete, Put, Post
+- Tested with Postman
+- Works!
+
+Wed Oct 2nd
+- Can't get sql to work
+- Set up OH to fix sql 
+- Decided it was a problem my bash_profile and that was affecting mysql command path
+- Computer froze, just re-started
+- My bash_profile file doesn't seem to be working? Can't use any commands now
+- Now instead of just mysql command not working...no command will work...vim, cat, ls, cd...
+- Terminal broken ): wat do
+- Can't commit because vim command won't work
+
+Thurs Oct 3rd
+- Using my partner's laptop now instead of my computer, will fix my terminal on my computer later (might have to reinstall MacOS?)
+- Wish I commited more often ): 
+- 
