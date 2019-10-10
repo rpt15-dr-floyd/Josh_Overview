@@ -48,3 +48,46 @@ Postgres index.js setup
 
 Postgres functions
 - saveToPostgres function saves gameInfo to postgres database table
+
+## Tues Oct 8th
+
+### CouchDB
+
+#### Set-Up
+- Downloaded from https://couchdb.apache.org/
+- Downloaded nano with npm (see https://www.npmjs.com/package/nano)
+- Used https://docs.couchdb.org/en/stable/setup/single-node.html 
+
+#### Index.js for CouchDb
+- import nano
+- added script "couch:setup": "node db/couch/index.js" to package.json
+- added script "couch:seed": "node db/couch/seed.js" to package.json
+- 
+
+
+
+#### Seeds.js for CouchDB
+- import faker for making fake data
+
+
+
+### Postgres
+
+#### Index.js for Postgres
+- npm install pg --save
+- import sequelize
+- added script "postgres:setup": "node db/postgres/index.js" to package.json
+- added script "postgres:seed": "node db/postgres/seed.js" to package.json
+- authenticate function
+- use sequelize constructor to make new database called 'overview'
+- ^ didn't work- had to manually make new db called overview in psql shell ```CREATE DATABASE overview;```
+- made new model called overviewModel
+- exported overviewModel to use in seed script file, seed.js
+
+
+
+#### Seeds.js for Postgres
+- import faker for making fake data
+- import OverviewModel from index.js
+- created seedOverview func that pushes new random faker values to temporary array that is then used by bulkCreate method
+- 5000 loops of i x 5000 loops of j = 10,000,000 seeds

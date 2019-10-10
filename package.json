@@ -16,7 +16,11 @@
     "db:setup": "node db/seed.js",
     "test": "jest --verbose --coverage",
     "test:watch": "jest --verbose --coverage --watch",
-    "test:update": "jest --verbose --coverage  --updateSnapshot"
+    "test:update": "jest --verbose --coverage  --updateSnapshot",
+    "couch:setup": "node db/couch/index.js",
+    "couch:seed": "node db/couch/seed.js",
+    "postgres:setup": "node db/postgres/index.js",
+    "postgres:seed": "node db/postgres/index.js"
   },
   "dependencies": {
     "axios": "^0.19.0",
@@ -30,9 +34,13 @@
     "faker": "^4.1.0",
     "http-proxy-middleware": "^0.19.1",
     "mongoose": "^5.6.9",
+    "nano": "^8.1.0",
     "nodemon": "^1.19.1",
+    "pg": "^7.12.1",
+    "psql": "0.0.1",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
+    "sequelize": "^5.19.5",
     "webpack": "^4.39.1",
     "webpack-cli": "^3.3.6"
   },
