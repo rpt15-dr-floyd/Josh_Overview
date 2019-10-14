@@ -84,6 +84,9 @@ Postgres functions
 - made new model called overviewModel
 - exported overviewModel to use in seed script file, seed.js
 
+- to make postgres shell work in terminal run ```export PATH=/Library/PostgreSQL/9.5/bin:$PATH```
+
+
 
 
 #### Seeds.js for Postgres
@@ -91,3 +94,8 @@ Postgres functions
 - import OverviewModel from index.js
 - created seedOverview func that pushes new random faker values to temporary array that is then used by bulkCreate method
 - 5000 loops of i x 5000 loops of j = 10,000,000 seeds
+
+
+
+
+ npm install newrelic --save
