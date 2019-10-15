@@ -1,6 +1,8 @@
 # 1. SDC Project: Steam Overview
 
-> Cloned from Stephen's Overview microservice from his FEC Project, this SDC project serves to reformat the database from mongo to postsql and couch. Furthermore, it will explore the benefits and drawbacks of both databases. Lastly, it will test the durability and speed of both databases under heavy loads and ultimately conclude with which database is the better choice. The Overview serves to inform the user of the current game they are viewing. This includes the game name, author, publisher, release date, description, and tags of genres the game belongs to. 
+> Cloned from Stephen's Overview microservice from his FEC Project, this SDC project serves to reformat the database from mongo to postsql and couch. Furthermore, it will explore the benefits and drawbacks of both databases. Lastly, it will test the durability and speed of both databases under heavy loads and ultimately conclude with which database is the better choice. 
+
+> The Overview serves to inform the user of the current game they are viewing. This includes the game name, author, publisher, release date, description, and tags of genres the game belongs to. 
 
 ## 1.1. Related Projects
 
