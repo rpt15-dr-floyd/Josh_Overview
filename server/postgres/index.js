@@ -1,6 +1,6 @@
 const express = require('express');
 const db = require('../../db/postgres/index.js');
-const port = 3001;
+const port = 3000;
 const app = express();
 
 const bodyParser = require('body-parser');
@@ -17,13 +17,19 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
 app.get(`/api/overview/:gameId`, (req, res) => {
   console.log('got to overview get request in server');
-  db.retrieveGameOverview(req.query.gameId)
+  console.log(req.url);
+  console.log('req params gameID', req.params.gameId);
+  db.retrieveGameOverview(req.params.gameId)
   .then((gameinfo)=>{
-    res.send(gameinfo);
+    // console.log('gameInfo!', gameinfo);
+    var arrayOfGameInfo = [];
+    arrayOfGameInfo.push(gameinfo);
+    // res.send(gameinfo);
+    res.send(arrayOfGameInfo);
   })
-  // .catch((err)=>{
-  //   console.error(err);
-  // })
+  .catch((err)=>{
+    console.error(err);
+  })
 });
 
 

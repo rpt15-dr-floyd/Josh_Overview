@@ -96,6 +96,18 @@ Postgres functions
 - 5000 loops of i x 5000 loops of j = 10,000,000 seeds
 
 
-
-
  npm install newrelic --save
+
+
+
+
+ Okay so I've been working on how to seed my postgres/mysql databases in my respective Elastic Beanstalk instance for a while now...
+and one solution I've come up with is to:
+
+ 1. Zip and upload my microservice to the Elastic Beanstalk instance (either manually via the AWS Console GUI or via the EB cli shell in Terminal)
+2. Then within the EB cli shell in Terminal, run these commands
+3. Run 
+   $```eb ssh```
+   ^This opens a Terminal on their linux server/computer
+4. Run
+ $```node db/seed.js```

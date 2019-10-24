@@ -5,7 +5,7 @@ const sequelize = new Sequelize('overview', 'postgres', 'password', {
   dialect: 'postgres',
   logging: false
 });
-// console.log('sequelize defined:', sequelize);
+console.log('sequelize defined:', sequelize);
 sequelize.authenticate().then(() => {
   console.log('authenticated');
 }).catch((err) => {
@@ -24,9 +24,9 @@ const Game = sequelize.define('game', {
 });
 
 // Note: using `force: true` will drop the table if it already exists
-// Game.sync({ force: true }).then(() => {
-//   console.log(`database overview with table Game created`);
-// });
+Game.sync({ force: true }).then(() => {
+  console.log(`database overview with table Game created`);
+});
 
 
 //FOR CRUD
