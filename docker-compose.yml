@@ -11,7 +11,7 @@ services:
     environment:
       - NODE_ENV=production
       - PROD_API_URL=http://overviewdockertest.gm5eyxvukt.us-west-1.elasticbeanstalk.com/
-      - PROD_DB_HOST=aaw540sr82ds6a.c7keqqvs0xcu.us-west-1.rds.amazonaws.com
+      - PROD_DB_HOST=database
 
   database:
-    image: 
+    image: postgres:latest
