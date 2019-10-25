@@ -31,9 +31,9 @@ const Game = sequelize.define('game', {
 });
 
 // Note: using `force: true` will drop the table if it already exists
-Game.sync({ force: true }).then(() => {
-  console.log(`database overview with table Game created`);
-});
+// Game.sync({ force: true }).then(() => {
+//   console.log(`database overview with table Game created`);
+// });
 
 
 //FOR CRUD
