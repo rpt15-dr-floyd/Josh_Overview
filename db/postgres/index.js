@@ -1,12 +1,15 @@
 const Sequelize = require('sequelize');
+//import fs from 'fs';
+// import cKey from fs.readFileSync('../../../awspemfile.pemimport'); 
 
 const sequelize = new Sequelize('overview', 'postgres', 'password', {
   host: 'ec2-13-57-27-145.us-west-1.compute.amazonaws.com',
   port: 5432,
   dialect: 'postgres',
-  dialectOptions: {
-    ssl:'Amazon RDS'
-  },
+  // dialectOptions: {
+  //   ssl:'Amazon RDS'
+  // },
+  ssl: true,
   logging: false
 });
 console.log('sequelize defined:', sequelize);
