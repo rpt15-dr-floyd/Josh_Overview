@@ -2,8 +2,8 @@ const Sequelize = require('sequelize');
 //import fs from 'fs';
 // import cKey from fs.readFileSync('../../../awspemfile.pemimport'); 
 
-const sequelize = new Sequelize('overview', 'postgres', 'password', {
-  host: 'ec2-13-57-27-145.us-west-1.compute.amazonaws.com',
+const sequelize = new Sequelize('overview', 'power_user', 'password', {
+  host: 'ec2-54-153-116-103.us-west-1.compute.amazonaws.com',
   port: 5432,
   dialect: 'postgres',
   // dialectOptions: {
