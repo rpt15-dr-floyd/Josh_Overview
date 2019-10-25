@@ -46,8 +46,8 @@ class App extends React.Component {
 
   getGameData() {
     // axios.get(`${prodEndpoint}/api/overview/${this.state.gameId}`)
-    // axios.get(`/api/overview/${this.state.gameId}`)
-    axios.get(`http://ec2-13-57-13-174.us-west-1.compute.amazonaws.com/api/overview/${this.state.gameId}`)
+    axios.get(`/api/overview/${this.state.gameId}`)
+    // axios.get(`ec2-13-57-13-174.us-west-1.compute.amazonaws.com/api/overview/${this.state.gameId}`)
       .then((res) => {
         // handle data
         this.setState({
