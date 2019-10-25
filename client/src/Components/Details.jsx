@@ -34,7 +34,8 @@ class Details extends React.Component {
   render() {
     let developerUrl = `https://store.steampowered.com/developer/${this.props.developer}`;
     let publisherUrl = `https://store.steampowered.com/publisher/${this.props.publisher}`;
-    let formattedDate = this.props.release_date.slice(0, 10)
+    // let formattedDate = this.props.release_date.slice(0, 10)
+    let formattedDate = this.props.release_date;
     let numRecentReviews = this.props.recent.length;
     let numTotalReviews = this.props.totalReviews.length;
 
