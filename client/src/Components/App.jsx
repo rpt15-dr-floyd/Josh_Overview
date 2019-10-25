@@ -41,7 +41,7 @@ class App extends React.Component {
 
     this.getGameData();
     this.getImage();
-    this.getReviews();
+    // this.getReviews();
   }
 
   getGameData() {
