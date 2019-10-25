@@ -89,9 +89,9 @@ const deleteGameOverview = (id) => {
   })
 };
 
-// sequelize.sync({ force: true }).then(() => {
-//   console.log('Database & tables created!');
-// });
+sequelize.sync({ force: true }).then(() => {
+  console.log('Database & tables created!');
+});
 
 module.exports = {
   Game,
