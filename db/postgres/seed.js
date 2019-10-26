@@ -34,4 +34,11 @@ const seedOverview = function (batchOfDocs) {
   
 
 }
-seedOverview(0);
+sequelize
+  .sync({
+    force: true
+  })
+  .then(() => {
+    console.log('created tables if they do not exist');
+    seedOverview(0);
+  });

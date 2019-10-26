@@ -6,9 +6,6 @@ const sequelize = new Sequelize('overview', 'power_user', 'password', {
   host: 'ec2-54-153-116-103.us-west-1.compute.amazonaws.com',
   port: 5432,
   dialect: 'postgres',
-  // dialectOptions: {
-  //   ssl:'Amazon RDS'
-  // },
   ssl: true,
   logging: false
 });
@@ -98,5 +95,6 @@ module.exports = {
   saveGameOverview,
   retrieveGameOverview,
   updateGameOverview,
-  deleteGameOverview
+  deleteGameOverview,
+  sequelize
 }
