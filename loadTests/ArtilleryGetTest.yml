@@ -1,21 +1,21 @@
 config:
-  target: 'http://localhost:3001'
-  phases:
-    # - duration: 60
-    #   arrivalCount: 60
-    #   name: "1 rps"
+  target: 'http://ec2-13-57-13-174.us-west-1.compute.amazonaws.com'
+  phases: 
+    - duration: 60
+      arrivalCount: 60
+      name: "1 rps"
     # - duration: 60
     #   arrivalCount: 600
     #   name: "10 rps"
     # - duration: 60
     #   arrivalCount: 6000
     #   name: "100 rps"
-    - duration: 60
-      arrivalCount: 60000
-      name: "1000 rps"
+    # - duration: 60
+    #   arrivalCount: 60000
+    #   name: "1000 rps"
 
 scenarios:
   - flow:
     - get:
-        url: "/overview/{{$randomNumber(9000000,10000000)}}"
+        url: "/api/overview/:{{$randomNumber(9000000,10000000)}}"
     

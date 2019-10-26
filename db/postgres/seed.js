@@ -1,5 +1,5 @@
 const {Game} = require('./index.js');
-
+const {sequelize} = require('./index.js');
 const faker = require('faker');
 // console.log(OverviewModel);
 
@@ -26,7 +26,7 @@ const seedOverview = function (batchOfDocs) {
       batchOfDocs++;
       //recursive call
       seedOverview(batchOfDocs);
-      console.log('bulk of overview db accesse at batchOfDocs:', batchOfDocs );
+      console.log('Number of Docs Seeded:', batchOfDocs*1000);
     }).catch(function (err) {
       console.error(err);
     })
