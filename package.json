@@ -12,7 +12,7 @@
     "dev": "webpack -d --watch --env.NODE_ENV=development --config webpack.config.dev.js",
     "start": "NODE_ENV=production node server/postgres/index.js",
     "startDev": "NODE_ENV=development node server/postgres/index.js",
-    "startDocker": "NODE_ENV=production && node db/postgres/seed.js && sleep 2 && nodemon server/postgres/index.js",
+    "startDocker": "NODE_ENV=production && sleep 2 && nodemon server/postgres/index.js",
     "db:setup": "node db/postgres/seed.js",
     "test": "jest --verbose --coverage",
     "test:watch": "jest --verbose --coverage --watch",
