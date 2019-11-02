@@ -6,7 +6,7 @@ const app = express();
 const bodyParser = require('body-parser');
 const compression = require('compression');
 const cors = require('cors');
-
+const {sequelize} = require('../../db/postgres/index.js');
 app.use('/', express.static('public'));
 app.use('/:gameId', express.static('public'));
 
@@ -14,6 +14,13 @@ app.use(cors());
 app.use(compression());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
+
+//authenticate connection to database
+sequelize.authenticate().then(() => {
+  console.log('authenticated');
+}).catch((err) => {
+  console.log('line 11 consolelog', err);
+})
 
 app.get(`/api/overview/:gameId`, (req, res) => {
   console.log('got to overview get request in server');
