@@ -65,7 +65,7 @@ class App extends React.Component {
 
   getImage() {
     // axios.get(`http://localhost:3002/api/overviewImage/${this.state.gameId}`)
-    axios.get(`http://ec2-54-153-99-135.us-west-1.compute.amazonaws.com/api/overviewImage/${this.state.gameId}`)
+    axios.get(`http://ec2-52-53-185-254.us-west-1.compute.amazonaws.com/api/overviewImage/${this.state.gameId}`)
     // axios.get(`http://ec2-54-153-99-135.us-west-1.compute.amazonaws.com/api/overviewImage/${this.state.gameId}`)
     // axios.get(`https://steamcdn-a.akamaihd.net/steam/apps/413150/header.jpg?t=1568067487`)
       .then((res) => {
