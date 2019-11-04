@@ -7,8 +7,8 @@ const bodyParser = require('body-parser');
 const compression = require('compression');
 const cors = require('cors');
 const {sequelize} = require('../../db/postgres/index.js');
-// app.use('/', express.static('public'));
-app.use('/', express.static(__dirname + '/../../')); //loader.io
+app.use('/', express.static('public'));
+// app.use('/', express.static(__dirname + '/../../')); //loader.io
 app.use('/:gameId', express.static('public'));
 
 app.use(cors());
