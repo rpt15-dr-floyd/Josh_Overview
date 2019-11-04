@@ -24,6 +24,17 @@ sequelize.authenticate().then(() => {
   console.log('line 11 consolelog', err);
 })
 
+//pasted from Justin
+app.use(function(req, res, next) {
+  res.header('Access-Control-Allow-Origin', '*');
+  res.header(
+    'Access-Control-Allow-Headers',
+    'Origin, X-Requested-With, Content-Type, Accept'
+  );
+  next();
+});
+
+
 app.get(`/api/overview/:gameId`, (req, res) => {
   console.log('got to overview get request in server');
   console.log(req.url);
