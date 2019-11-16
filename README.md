@@ -126,7 +126,7 @@ An `nvmrc` file is included if using [nvm](https://github.com/creationix/nvm).
 
 |                             | 1rps                      | 10rps                     | 100rps                     | 1000rps                       |
 |-----------------------------|---------------------------|---------------------------|----------------------------|-------------------------------|
-| Loader.io (single instance) | `100ms` Latency / `0%` errors | `120ms` Latency / `0%` errors | `1280ms` Latency / `0%` errors | `3000ms` Latency / `60% +` errors |
+| Loader.io (single instance) | `15 ms` Latency / `0%` errors | `53ms` Latency / `0%` errors | `98ms` Latency / `0%` errors | `224` Latency / `60% +` errors |
 
 ### 3.1.2 With Self-Made Load Balancer - Deployed Load testing (Loader.io)
 
@@ -134,7 +134,7 @@ An `nvmrc` file is included if using [nvm](https://github.com/creationix/nvm).
 
 |                             | 1rps                      | 10rps                     | 100rps                     | 1000rps                       |
 |-----------------------------|---------------------------|---------------------------|----------------------------|-------------------------------|
-| Loader.io (single instance) | `100ms` Latency / `0%` errors | `120ms` Latency / `0%` errors | `1280ms` Latency / `0%` errors | `3000ms` Latency / `60% +` errors |
+| Loader.io (single instance) | `102ms` Latency / `0%` errors | `432ms` Latency / `0%` errors | `1280ms` Latency / `0%` errors | `2933 wms` Latency / `60% +` errors |
 
 ### 3.1.3 With Nginx Load Balancer - Deployed Load testing (Loader.io)
 
@@ -142,5 +142,5 @@ An `nvmrc` file is included if using [nvm](https://github.com/creationix/nvm).
 
 |                             | 1rps                      | 10rps                     | 100rps                     | 1000rps                       |
 |-----------------------------|---------------------------|---------------------------|----------------------------|-------------------------------|
-| Loader.io (single instance) | `100ms` Latency / `0%` errors | `120ms` Latency / `0%` errors | `1280ms` Latency / `0%` errors | `3000ms` Latency / `60% +` errors |
+| Loader.io (single instance) | `14ms` Latency / `0%` errors | `43ms` Latency / `0%` errors | `128ms` Latency / `0%` errors | `183` Latency / `60% +` errors |
 
