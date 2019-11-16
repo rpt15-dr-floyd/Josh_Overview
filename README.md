@@ -4,6 +4,8 @@
 
 > The Overview serves to inform the user of the current game they are viewing. This includes the game name, author, publisher, release date, description, and tags of genres the game belongs to. 
 
+![](steam_screenshot.png)
+
 ## 1.1. Related Projects
 
   - https://github.com/rpt15-fec-tabata-yoga/stephen_overview - Stephen's microservice: Overview (Original FEC Project)
