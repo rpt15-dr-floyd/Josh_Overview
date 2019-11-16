@@ -118,7 +118,7 @@ An `nvmrc` file is included if using [nvm](https://github.com/creationix/nvm).
 
 
 ## 3.1 Speed-Testing
-### 1.5.8. Deployed Load testing (Loader.io)
+### 3.1.1 Deployed Load testing (Loader.io)
 
 
 
