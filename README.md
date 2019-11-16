@@ -118,3 +118,11 @@ An `nvmrc` file is included if using [nvm](https://github.com/creationix/nvm).
 
 
 ## 3.1 Speed-Testing
+### 1.5.8. Deployed Load testing (Loader.io)
+
+
+
+|                             | 1rps                      | 10rps                     | 100rps                     | 1000rps                       |
+|-----------------------------|---------------------------|---------------------------|----------------------------|-------------------------------|
+| Loader.io (single instance) | `100ms` Latency / `0%` errors | `120ms` Latency / `0%` errors | `1280ms` Latency / `0%` errors | `3000ms` Latency / `60% +` errors |
+
