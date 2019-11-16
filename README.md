@@ -128,3 +128,19 @@ An `nvmrc` file is included if using [nvm](https://github.com/creationix/nvm).
 |-----------------------------|---------------------------|---------------------------|----------------------------|-------------------------------|
 | Loader.io (single instance) | `100ms` Latency / `0%` errors | `120ms` Latency / `0%` errors | `1280ms` Latency / `0%` errors | `3000ms` Latency / `60% +` errors |
 
+### 3.1.2 With Self-Made Load Balancer - Deployed Load testing (Loader.io)
+
+
+
+|                             | 1rps                      | 10rps                     | 100rps                     | 1000rps                       |
+|-----------------------------|---------------------------|---------------------------|----------------------------|-------------------------------|
+| Loader.io (single instance) | `100ms` Latency / `0%` errors | `120ms` Latency / `0%` errors | `1280ms` Latency / `0%` errors | `3000ms` Latency / `60% +` errors |
+
+### 3.1.3 With Nginx Load Balancer - Deployed Load testing (Loader.io)
+
+
+
+|                             | 1rps                      | 10rps                     | 100rps                     | 1000rps                       |
+|-----------------------------|---------------------------|---------------------------|----------------------------|-------------------------------|
+| Loader.io (single instance) | `100ms` Latency / `0%` errors | `120ms` Latency / `0%` errors | `1280ms` Latency / `0%` errors | `3000ms` Latency / `60% +` errors |
+
